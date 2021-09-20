@@ -34,6 +34,10 @@ body {
       .header .hero_section .hero_image_container .header_img {
         width: inherit; }
     .header .hero_section_info {
-      margin-top: 9px; }
+      margin-top: 13px; }
       .header .hero_section_info--header {
-        font-size: 3.8rem; }
+        font-size: 3.8rem;
+        margin-bottom: 7px; }
+      .header .hero_section_info--paragraph {
+        font-size: 2rem;
+        color: #4f4f4f; }

@@ -47,9 +47,14 @@ body {
       }
     }
     &_info {
-      margin-top: 9px;
+      margin-top: 13px;
       &--header {
         font-size: 3.8rem;
+        margin-bottom: 7px;
+      }
+      &--paragraph {
+        font-size: 2rem;
+        color: $text_color;
       }
     }
   }
