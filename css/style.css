@@ -10,4 +10,23 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  font-family: "Inter";
+  box-sizing: border-box;
+  width: 100%; }
+
+.header {
+  background-color: #f5ebda;
+  height: 100vh;
+  padding-inline: 4.3rem; }
+  .header .navbar_elements {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem; }
+    .header .navbar_elements .logo {
+      font-size: 2rem;
+      font-weight: 900; }
+  .header_image_container {
+    width: 100%;
+    margin: 0 auto; }
+    .header_image_container .header_img {
+      width: inherit; }
