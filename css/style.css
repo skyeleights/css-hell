@@ -31,6 +31,10 @@ body {
   background-color: #f3ede1;
   height: auto;
   padding-inline: 4.3rem; }
+  @media (min-width: 1000px) {
+    .header {
+      padding-inline: 15rem;
+      height: 100vh; } }
   .header .navbar_elements {
     display: flex;
     justify-content: space-between;
@@ -39,18 +43,32 @@ body {
       font-size: 2rem;
       font-weight: 900; }
   .header .hero_section {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      .header .hero_section {
+        flex-direction: row-reverse; } }
     .header .hero_section .hero_image_container {
       width: 100%;
       margin: 0 auto; }
+      @media (min-width: 1000px) {
+        .header .hero_section .hero_image_container {
+          width: 50%; } }
       .header .hero_section .hero_image_container .header_img {
-        width: inherit; }
+        width: 100%; }
     .header .hero_section_info {
       margin-top: 13px; }
+      @media (min-width: 1000px) {
+        .header .hero_section_info {
+          width: 50%; } }
       .header .hero_section_info--header {
         font-size: 3.8rem;
         margin-bottom: 10px; }
+        @media (min-width: 970px) {
+          .header .hero_section_info--header {
+            font-size: 6.347rem; } }
       .header .hero_section_info--paragraph {
         font-size: 1.8rem;
         color: #4f4f4f;
@@ -60,16 +78,19 @@ body {
         flex-wrap: wrap;
         align-items: center;
         width: 100%; }
-        @media (max-width: 455px) {
+        @media (max-width: 1000px) {
           .header .hero_section_info .header_links {
             justify-content: center; } }
       .header .hero_section_info--btn {
         background-color: #4d13d1;
         color: white;
         margin-bottom: 10px; }
-        @media (max-width: 455px) {
+        @media (max-width: 1000px) {
           .header .hero_section_info--btn {
             width: 100%; } }
+        @media (min-width: 1000px) {
+          .header .hero_section_info--btn {
+            margin-right: 3.8rem; } }
       .header .hero_section_info--link {
         text-align: center;
         font-size: 1.8rem;

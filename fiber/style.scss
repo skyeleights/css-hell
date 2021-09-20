@@ -4,6 +4,8 @@ $main_color: rgb(77, 19, 209);
 $text_color: rgb(79, 79, 79);
 $titles_color: rgb(0, 0, 0);
 $main_font: "Inter";
+$padding-inline-full: 15rem;
+$padding-inline-mobile: 4.3rem;
 *,
 *::after,
 *::before {
@@ -36,7 +38,11 @@ body {
 .header {
   background-color: $hero_background_color;
   height: auto;
-  padding-inline: 4.3rem;
+  padding-inline: $padding-inline-mobile;
+  @media (min-width: 1000px) {
+    padding-inline: $padding-inline-full;
+    height: 100vh;
+  }
   .navbar {
     &_elements {
       display: flex;
@@ -49,20 +55,34 @@ body {
     }
   }
   .hero_section {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    @media (min-width: 1000px) {
+      flex-direction: row-reverse;
+    }
     .hero_image_container {
+      @media (min-width: 1000px) {
+        width: 50%;
+      }
       width: 100%;
       margin: 0 auto;
       .header_img {
-        width: inherit;
+        width: 100%;
       }
     }
     &_info {
+      @media (min-width: 1000px) {
+        width: 50%;
+      }
       margin-top: 13px;
       &--header {
         font-size: 3.8rem;
         margin-bottom: 10px;
+        @media (min-width: 970px) {
+          font-size: 6.347rem;
+        }
       }
       &--paragraph {
         font-size: 1.8rem;
@@ -73,7 +93,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        @media (max-width: 455px) {
+        @media (max-width: 1000px) {
           justify-content: center;
         }
         width: 100%;
@@ -82,8 +102,11 @@ body {
         background-color: $main_color;
         color: white;
         margin-bottom: 10px;
-        @media (max-width: 455px) {
+        @media (max-width: 1000px) {
           width: 100%;
+        }
+        @media (min-width: 1000px) {
+          margin-right: 3.8rem;
         }
       }
       &--link {
