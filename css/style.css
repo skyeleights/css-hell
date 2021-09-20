@@ -6,6 +6,12 @@
   padding: 0px;
   box-sizing: inherit; }
 
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px; }
+
 html {
   font-size: 62.5%; }
 
@@ -15,7 +21,6 @@ body {
   width: 100%; }
 
 .btn {
-  width: 100%;
   padding: 2rem 2rem;
   border: none;
   font-size: 1.8rem;
@@ -50,16 +55,24 @@ body {
         font-size: 1.8rem;
         color: #4f4f4f;
         margin-bottom: 10px; }
+      .header .hero_section_info .header_links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%; }
+        @media (max-width: 455px) {
+          .header .hero_section_info .header_links {
+            justify-content: center; } }
       .header .hero_section_info--btn {
         background-color: #4d13d1;
         color: white;
         margin-bottom: 10px; }
+        @media (max-width: 455px) {
+          .header .hero_section_info--btn {
+            width: 100%; } }
       .header .hero_section_info--link {
         text-align: center;
-        display: block;
-        width: 145px;
-        margin: 0 auto;
-        font-size: 1.93rem;
+        font-size: 1.8rem;
         color: #4d13d1;
         font-weight: 700;
         text-decoration: none;
