@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-$hero_background_color: rgb(245, 235, 218);
+$hero_background_color: rgb(243, 237, 225);
 $main_color: rgb(77, 19, 209);
 $text_color: rgb(79, 79, 79);
 $titles_color: rgb(0, 0, 0);
@@ -37,11 +37,21 @@ body {
       }
     }
   }
-  &_image_container {
-    width: 100%;
-    margin: 0 auto;
-    .header_img {
-      width: inherit;
+  .hero_section {
+    display: flex;
+    flex-wrap: wrap;
+    .hero_image_container {
+      width: 100%;
+      margin: 0 auto;
+      .header_img {
+        width: inherit;
+      }
+    }
+    &_info {
+      padding: 1.9rem;
+      &--header {
+        font-size: 3.4rem;
+      }
     }
   }
 }

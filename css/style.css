@@ -15,7 +15,7 @@ body {
   width: 100%; }
 
 .header {
-  background-color: #f5ebda;
+  background-color: #f3ede1;
   height: 100vh;
   padding-inline: 4.3rem; }
   .header .navbar_elements {
@@ -25,8 +25,15 @@ body {
     .header .navbar_elements .logo {
       font-size: 2rem;
       font-weight: 900; }
-  .header_image_container {
-    width: 100%;
-    margin: 0 auto; }
-    .header_image_container .header_img {
-      width: inherit; }
+  .header .hero_section {
+    display: flex;
+    flex-wrap: wrap; }
+    .header .hero_section .hero_image_container {
+      width: 100%;
+      margin: 0 auto; }
+      .header .hero_section .hero_image_container .header_img {
+        width: inherit; }
+    .header .hero_section_info {
+      padding: 1.9rem; }
+      .header .hero_section_info--header {
+        font-size: 3.4rem; }
