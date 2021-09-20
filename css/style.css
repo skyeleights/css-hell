@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 *,
 *::after,
 *::before {
@@ -34,6 +34,6 @@ body {
       .header .hero_section .hero_image_container .header_img {
         width: inherit; }
     .header .hero_section_info {
-      padding: 1.9rem; }
+      margin-top: 9px; }
       .header .hero_section_info--header {
-        font-size: 3.4rem; }
+        font-size: 3.8rem; }

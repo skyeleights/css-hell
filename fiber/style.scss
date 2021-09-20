@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 $hero_background_color: rgb(243, 237, 225);
 $main_color: rgb(77, 19, 209);
 $text_color: rgb(79, 79, 79);
@@ -30,7 +30,6 @@ body {
       display: flex;
       justify-content: space-between;
       padding-top: 3rem;
-
       .logo {
         font-size: 2rem;
         font-weight: 900;
@@ -48,9 +47,9 @@ body {
       }
     }
     &_info {
-      padding: 1.9rem;
+      margin-top: 9px;
       &--header {
-        font-size: 3.4rem;
+        font-size: 3.8rem;
       }
     }
   }
