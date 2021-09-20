@@ -14,9 +14,17 @@ body {
   box-sizing: border-box;
   width: 100%; }
 
+.btn {
+  width: 100%;
+  padding: 2rem 2rem;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-weight: 700; }
+
 .header {
   background-color: #f3ede1;
-  height: 100vh;
+  height: auto;
   padding-inline: 4.3rem; }
   .header .navbar_elements {
     display: flex;
@@ -37,7 +45,22 @@ body {
       margin-top: 13px; }
       .header .hero_section_info--header {
         font-size: 3.8rem;
-        margin-bottom: 7px; }
+        margin-bottom: 10px; }
       .header .hero_section_info--paragraph {
-        font-size: 2rem;
-        color: #4f4f4f; }
+        font-size: 1.8rem;
+        color: #4f4f4f;
+        margin-bottom: 10px; }
+      .header .hero_section_info--btn {
+        background-color: #4d13d1;
+        color: white;
+        margin-bottom: 10px; }
+      .header .hero_section_info--link {
+        text-align: center;
+        display: block;
+        width: 145px;
+        margin: 0 auto;
+        font-size: 1.93rem;
+        color: #4d13d1;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 2px solid #4d13d1; }
