@@ -97,4 +97,17 @@ body {
         color: #4d13d1;
         font-weight: 700;
         text-decoration: none;
-        border-bottom: 2px solid #4d13d1; }
+        border-bottom: 2px solid #4d13d1;
+        margin-bottom: 10px; }
+      .header .hero_section_info .header_smallelements {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        color: #4f4f4f; }
+        .header .hero_section_info .header_smallelements--1, .header .hero_section_info .header_smallelements--2 {
+          margin: 4px 9px 4px 0px;
+          display: flex;
+          align-items: center; }
+          .header .hero_section_info .header_smallelements--1 img, .header .hero_section_info .header_smallelements--2 img {
+            margin-right: 4px;
+            width: 20px; }
