@@ -60,6 +60,16 @@ body {
         width: 100%; }
     .header .hero_section_info {
       margin-top: 13px; }
+      .header .hero_section_info .reviews {
+        display: flex;
+        align-items: center;
+        font-size: 1.48rem;
+        margin-bottom: 10px; }
+        .header .hero_section_info .reviews--stars {
+          margin-right: 10px; }
+        @media (max-width: 700px) {
+          .header .hero_section_info .reviews {
+            display: none; } }
       @media (min-width: 1000px) {
         .header .hero_section_info {
           width: 50%; } }

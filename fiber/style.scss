@@ -73,6 +73,18 @@ body {
       }
     }
     &_info {
+      .reviews {
+        display: flex;
+        align-items: center;
+        font-size: 1.48rem;
+        margin-bottom: 10px;
+        &--stars {
+          margin-right: 10px;
+        }
+        @media (max-width: 700px) {
+          display: none;
+        }
+      }
       @media (min-width: 1000px) {
         width: 50%;
       }
