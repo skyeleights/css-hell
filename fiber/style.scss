@@ -61,6 +61,7 @@ li {
     }
   }
   .navbarDesktop {
+    padding: 0px;
     @media (max-width: 700px) {
       display: none;
     }
@@ -78,7 +79,8 @@ li {
         &:not(:last-child) {
           margin-right: 28px;
         }
-        font-size: 2rem;
+
+        font-size: 1.6rem;
       }
     }
     .navAuth {

@@ -49,6 +49,7 @@ li {
       font-size: 2rem;
       font-weight: 900; }
   .header .navbarDesktop {
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +63,7 @@ li {
     .header .navbarDesktop .navMenu {
       display: flex; }
       .header .navbarDesktop .navMenu_element {
-        font-size: 2rem; }
+        font-size: 1.6rem; }
         .header .navbarDesktop .navMenu_element:not(:last-child) {
           margin-right: 28px; }
     .header .navbarDesktop .navAuth {
