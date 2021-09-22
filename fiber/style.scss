@@ -28,6 +28,9 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
+li {
+  list-style-type: none;
+}
 .btn {
   padding: 2rem 2.6rem;
   border: none;
@@ -44,7 +47,7 @@ body {
     height: 100vh;
   }
   .navbar {
-    @media (min-width: 1000px) {
+    @media (min-width: 700px) {
       display: none;
     }
     &_elements {
@@ -58,8 +61,47 @@ body {
     }
   }
   .navbarDesktop {
-    @media (max-width: 1000px) {
+    @media (max-width: 700px) {
       display: none;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    .logo {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    .navMenu {
+      display: flex;
+      &_element {
+        &:not(:last-child) {
+          margin-right: 28px;
+        }
+        font-size: 2rem;
+      }
+    }
+    .navAuth {
+      display: flex;
+      align-items: center;
+      .Auth_Elements {
+        margin-inline: 18px;
+        &-1 {
+          border: none;
+          font-size: 1.6rem;
+          font-weight: 600;
+          background-color: transparent;
+        }
+        &-2 {
+          font-size: 1.6rem;
+          border: none;
+          font-weight: 600;
+          background-color: $main_color;
+          padding: 1.65rem 2.6rem;
+          border-radius: 5px;
+          color: white;
+        }
+      }
     }
   }
   .hero_section {
