@@ -35,6 +35,9 @@ body {
     .header {
       padding-inline: 15rem;
       height: 100vh; } }
+  @media (min-width: 1000px) {
+    .header .navbar {
+      display: none; } }
   .header .navbar_elements {
     display: flex;
     justify-content: space-between;
@@ -42,6 +45,9 @@ body {
     .header .navbar_elements .logo {
       font-size: 2rem;
       font-weight: 900; }
+  @media (max-width: 1000px) {
+    .header .navbarDesktop {
+      display: none; } }
   .header .hero_section {
     width: 100%;
     display: flex;

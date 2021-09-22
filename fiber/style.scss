@@ -44,6 +44,9 @@ body {
     height: 100vh;
   }
   .navbar {
+    @media (min-width: 1000px) {
+      display: none;
+    }
     &_elements {
       display: flex;
       justify-content: space-between;
@@ -52,6 +55,11 @@ body {
         font-size: 2rem;
         font-weight: 900;
       }
+    }
+  }
+  .navbarDesktop {
+    @media (max-width: 1000px) {
+      display: none;
     }
   }
   .hero_section {
