@@ -6,6 +6,7 @@ $titles_color: rgb(0, 0, 0);
 $main_font: "Inter";
 $padding-inline-full: 15rem;
 $padding-inline-mobile: 4.3rem;
+$MarginTop_betweenSections: 6.3rem;
 *,
 *::after,
 *::before {
@@ -42,6 +43,7 @@ li {
   background-color: $hero_background_color;
   height: auto;
   padding-inline: $padding-inline-mobile;
+  padding-bottom: 40px;
   @media (min-width: 1000px) {
     padding-inline: $padding-inline-full;
     height: 100vh;
@@ -200,5 +202,18 @@ li {
         }
       }
     }
+  }
+}
+
+main {
+  .sections {
+    margin-top: $MarginTop_betweenSections;
+    padding-inline: $padding-inline-mobile;
+    @media (min-width: 1000px) {
+      padding-inline: $padding-inline-full;
+    }
+  }
+  .section--1{
+    
   }
 }
