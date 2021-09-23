@@ -171,3 +171,37 @@ main .sections {
   @media (min-width: 1000px) {
     main .sections {
       padding-inline: 15rem; } }
+
+main .section--1 span {
+  color: #4d13d1;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 800; }
+
+main .section--1 h2 {
+  font-size: 3.7rem;
+  font-weight: 800;
+  margin-bottom: 23px; }
+
+main .section--1 .elements {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  @media (min-width: 800px) {
+    main .section--1 .elements {
+      flex-wrap: nowrap; } }
+  main .section--1 .elements .element {
+    margin: 18px 10px 18px 0px; }
+    main .section--1 .elements .element img {
+      width: 4.3rem;
+      display: block;
+      margin-bottom: 10px; }
+    main .section--1 .elements .element span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px; }
+    main .section--1 .elements .element p {
+      color: #4f4f4f;
+      font-size: 1.5rem; }
