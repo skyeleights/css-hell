@@ -166,11 +166,12 @@ li {
             width: 20px; }
 
 main .sections {
-  margin-top: 6.3rem;
-  padding-inline: 4.3rem; }
-  @media (min-width: 1000px) {
-    main .sections {
-      padding-inline: 15rem; } }
+  margin-top: 6.3rem; }
+  main .sections:not(:nth-child(2)) {
+    padding-inline: 4.3rem; }
+    @media (min-width: 1000px) {
+      main .sections:not(:nth-child(2)) {
+        padding-inline: 15rem; } }
 
 main .section--1 span {
   color: #4d13d1;
@@ -188,7 +189,7 @@ main .section--1 .elements {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     main .section--1 .elements {
       flex-wrap: nowrap; } }
   main .section--1 .elements .element {
@@ -205,3 +206,46 @@ main .section--1 .elements {
     main .section--1 .elements .element p {
       color: #4f4f4f;
       font-size: 1.5rem; }
+
+main .section--2 {
+  padding-inline: 3rem;
+  margin-inline: 4.3rem;
+  background-color: #4d13d1;
+  border-radius: 10px;
+  color: white; }
+  @media (min-width: 1000px) {
+    main .section--2 {
+      margin-inline: 15rem; } }
+  @media (max-width: 700px) {
+    main .section--2 {
+      padding-top: 4.2rem; } }
+  main .section--2 .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    @media (min-width: 700px) {
+      main .section--2 .content {
+        flex-wrap: nowrap; } }
+    main .section--2 .content img {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      border-start-start-radius: 4px; }
+      @media (max-width: 700px) {
+        main .section--2 .content img {
+          width: 100%; } }
+    @media (min-width: 700px) {
+      main .section--2 .content .info {
+        margin: 2rem; } }
+    main .section--2 .content .info h2 {
+      font-size: 3.7rem;
+      margin-bottom: 1rem; }
+    main .section--2 .content .info p {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      margin-bottom: 1rem; }
+    main .section--2 .content .info .btn {
+      color: #4d13d1; }
+      @media (max-width: 700px) {
+        main .section--2 .content .info .btn {
+          width: 100%; } }
