@@ -3,6 +3,7 @@ $hero_background_color: rgb(243, 237, 225);
 $main_color: rgb(77, 19, 209);
 $text_color: rgb(79, 79, 79);
 $titles_color: rgb(0, 0, 0);
+$border_color: rgb(196, 191, 191);
 $main_font: "Inter";
 $padding-inline-full: 15rem;
 $padding-inline-mobile: 4.3rem;
@@ -302,6 +303,58 @@ main {
             width: 100%;
           }
         }
+      }
+    }
+  }
+  .section--3 {
+    display: flex;
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+    span {
+      display: block;
+    }
+    .story {
+      border: 1px solid $border_color;
+      padding: 2.4rem;
+      border-radius: 7px;
+      @media (max-width: 1000px) {
+        &:not(:last-child) {
+          margin-bottom: 3.7rem;
+        }
+      }
+      @media (min-width: 1000px) {
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+      .user_info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        &--name {
+          color: $main_color;
+          font-size: 1.8rem;
+          font-weight: 800;
+        }
+        &--revenue {
+          font-size: 1.7rem;
+        }
+        img {
+          width: 5rem;
+          margin-right: 15px;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        line-height: 2.3rem;
+      }
+      .btn {
+        width: 100%;
+        color: $main_color;
+        background-color: transparent;
+        border: 1px solid $border_color;
       }
     }
   }

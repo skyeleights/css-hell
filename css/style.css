@@ -249,3 +249,43 @@ main .section--2 {
       @media (max-width: 700px) {
         main .section--2 .content .info .btn {
           width: 100%; } }
+
+main .section--3 {
+  display: flex; }
+  @media (max-width: 1000px) {
+    main .section--3 {
+      flex-wrap: wrap; } }
+  main .section--3 span {
+    display: block; }
+  main .section--3 .story {
+    border: 1px solid #c4bfbf;
+    padding: 2.4rem;
+    border-radius: 7px; }
+    @media (max-width: 1000px) {
+      main .section--3 .story:not(:last-child) {
+        margin-bottom: 3.7rem; } }
+    @media (min-width: 1000px) {
+      main .section--3 .story:not(:last-child) {
+        margin-right: 2rem; } }
+    main .section--3 .story .user_info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; }
+      main .section--3 .story .user_info--name {
+        color: #4d13d1;
+        font-size: 1.8rem;
+        font-weight: 800; }
+      main .section--3 .story .user_info--revenue {
+        font-size: 1.7rem; }
+      main .section--3 .story .user_info img {
+        width: 5rem;
+        margin-right: 15px; }
+    main .section--3 .story p {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      line-height: 2.3rem; }
+    main .section--3 .story .btn {
+      width: 100%;
+      color: #4d13d1;
+      background-color: transparent;
+      border: 1px solid #c4bfbf; }
