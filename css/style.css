@@ -6,6 +6,12 @@
   padding: 0px;
   box-sizing: inherit; }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
 h1,
 h2,
 h3 {
@@ -289,3 +295,37 @@ main .section--3 {
       color: #4d13d1;
       background-color: transparent;
       border: 1px solid #c4bfbf; }
+
+.footer {
+  margin-top: 6.3rem;
+  background-color: #f3ede1; }
+  .footer .content {
+    padding-top: 6.6rem;
+    padding-bottom: 6.6rem;
+    padding-inline: 4.3rem; }
+    @media (min-width: 1000px) {
+      .footer .content {
+        padding-inline: 15rem; } }
+    .footer .content .elements {
+      display: flex; }
+      @media (max-width: 900px) {
+        .footer .content .elements {
+          flex-direction: column; } }
+      @media (min-width: 1000px) {
+        .footer .content .elements .element {
+          margin-right: 4rem; }
+          .footer .content .elements .element:first-child {
+            width: 40rem; }
+            .footer .content .elements .element:first-child p {
+              margin-bottom: 25.6px; } }
+      @media (max-width: 900px) {
+        .footer .content .elements .element:not(:last-child) {
+          margin-bottom: 2.9rem; } }
+      .footer .content .elements .element li h4 {
+        margin-bottom: 1.3rem;
+        font-size: 1.9rem; }
+      .footer .content .elements .element li:not(:first-child) {
+        font-size: 1.7rem;
+        color: #4f4f4f; }
+        .footer .content .elements .element li:not(:first-child):not(:last-child) {
+          margin-bottom: 9px; }

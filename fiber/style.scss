@@ -15,6 +15,12 @@ $MarginTop_betweenSections: 6.3rem;
   padding: 0px;
   box-sizing: inherit;
 }
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 h1,
 h2,
 h3 {
@@ -355,6 +361,53 @@ main {
         color: $main_color;
         background-color: transparent;
         border: 1px solid $border_color;
+      }
+    }
+  }
+}
+.footer {
+  margin-top: $MarginTop_betweenSections;
+  background-color: $hero_background_color;
+  .content {
+    padding-top: 6.6rem;
+    padding-bottom: 6.6rem;
+    @media (min-width: 1000px) {
+      padding-inline: $padding-inline-full;
+    }
+    padding-inline: $padding-inline-mobile;
+    .elements {
+      display: flex;
+      @media (max-width: 900px) {
+        flex-direction: column;
+      }
+
+      .element {
+        @media (min-width: 1000px) {
+          margin-right: 4rem;
+          &:first-child {
+            p {
+              margin-bottom: 25.6px;
+            }
+            width: 40rem;
+          }
+        }
+        @media (max-width: 900px) {
+          &:not(:last-child) {
+            margin-bottom: 2.9rem;
+          }
+        }
+        li h4 {
+          margin-bottom: 1.3rem;
+          font-size: 1.9rem;
+        }
+
+        li:not(:first-child) {
+          font-size: 1.7rem;
+          color: $text_color;
+          &:not(:last-child) {
+            margin-bottom: 9px;
+          }
+        }
       }
     }
   }
