@@ -529,12 +529,23 @@ main {
           margin: 0 auto;
           line-height: 18px;
           font-weight: unset;
+          margin-bottom: 1rem;
         }
         img {
           width: 34rem;
           margin: 0 auto;
           margin-bottom: 1.4rem;
           margin-top: 2.8rem;
+        }
+        .dots {
+          .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            margin: 2px;
+          }
         }
       }
     }
