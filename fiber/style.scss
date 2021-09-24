@@ -15,6 +15,10 @@ $MarginTop_betweenSections: 6.3rem;
   padding: 0px;
   box-sizing: inherit;
 }
+input,
+label {
+  display: block;
+}
 a,
 a:link,
 a:visited {
@@ -407,6 +411,92 @@ main {
           &:not(:last-child) {
             margin-bottom: 9px;
           }
+        }
+      }
+    }
+  }
+}
+
+//// page2
+
+.Authbody {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center; /*centers items on the cross-axis (y by default)*/
+
+  .authMain {
+    padding-inline: $padding-inline-full;
+    display: flex;
+    .form {
+      margin-right: 5rem;
+      .logo {
+        font-size: 1.3rem;
+        margin-bottom: 1.9rem;
+        display: block;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 2.9rem;
+        margin-bottom: 1.9rem;
+      }
+      label {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      input {
+        margin-bottom: 1.8rem;
+      }
+      .terms {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.8rem;
+
+        span {
+          line-height: 21px;
+          font-size: 1.4rem;
+          font-weight: 100;
+          color: rgb(20, 20, 20);
+          a {
+            color: $main_color;
+            font-weight: 800;
+            text-decoration: underline;
+          }
+        }
+        input {
+          margin-right: 6px;
+        }
+      }
+      .btn {
+        background-color: $main_color;
+        width: 100%;
+        color: white;
+        padding: 1.7rem 1.7rem;
+        margin-bottom: 1.8rem;
+      }
+      .toSignIn {
+        text-align: center;
+        font-size: 1.3rem;
+        a {
+          color: $main_color;
+        }
+      }
+    }
+    .visuals {
+      text-align: center;
+      color: white;
+      background-color: $main_color;
+
+      &_content {
+        padding: 4rem;
+        margin: 0 auto;
+        img {
+          width: 26rem;
+          margin: 0 auto;
         }
       }
     }
